@@ -34,9 +34,8 @@ function calculadora(){
                 if (continua === "nao"){
                     return
                 }
-                return
         }
-        if( operador != "/" || operando2 != 0 || operador_valido != false)
+        if( (operador != "/" || operando2 != 0) && operador_valido != false)
         alert("Resultado: " +
             operando1 + " " + operador + " " + operando2 + " = " + resultado);
         }
