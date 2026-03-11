@@ -5,6 +5,7 @@ function calculadora(){
         let operando2;
         let operador;
         let continua;
+        let operador_valido =
 
         operando1 = parseFloat( prompt("Digite o primeiro número: ") );
         operando2 = parseFloat( prompt("Digite o segundo número: ") );
@@ -28,9 +29,14 @@ function calculadora(){
             }
         } else {
             alert("Operador inválido");
-            return 
-        }   
-        if( operador != "/" || operando2 != 0)
+            operador_valido = false
+            continua = prompt("digite sim para continuar e nao encerrar");
+                if (continua === "nao"){
+                    return
+                }
+                return
+        }
+        if( operador != "/" || operando2 != 0 || operador_valido != false)
         alert("Resultado: " +
             operando1 + " " + operador + " " + operando2 + " = " + resultado);
         }
