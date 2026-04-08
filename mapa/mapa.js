@@ -8,7 +8,29 @@ function mapa(){
     frutas.set("pera", 400);
 
     let preco = frutas.get("banana");
-
     console.log(preco);
+
+    //size e uma propiedade que armazena o tamanho do mapa
+    console.log(frutas.size);
+
+    // o metodo has() retorna verdadeiro ou falso para uma determinada chave
+    console.log(frutas.has("banana"));
+    frutas.forEach((valor,chave) => console.log(`${chave} = R$${valor}`))
+
+    // o metodo keys() retorna uma coleção com as chaves do mapa
+    //a estrutura de repetição for of itera sobre os valores de uma coleção
+
+    for (const x of frutas.keys()){
+        console.log(x);
+
+    }
+
+    //values() e um metodo que retorna uma coleção contendo todos valor de um mapa
+
+    for (const x of frutas.values()){
+        console.log(x);
+
+    }
+       
 }
 mapa();
